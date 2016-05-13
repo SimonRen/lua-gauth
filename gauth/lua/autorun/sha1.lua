@@ -8,11 +8,11 @@
 -- https://github.com/kikito/sha.lua
 --
 
-local sha1 = {
+sha1 = {
   _LICENSE = [[
     MIT LICENSE
 
-    Copyright (c) 2013 Enrique Garc¨ªa Cota + Eike Decker + Jeffrey Friedl
+    Copyright (c) 2013 Enrique Garcï¿½ï¿½a Cota + Eike Decker + Jeffrey Friedl
 
     Permission is hereby granted, free of charge, to any person obtaining a
     copy of this software and associated documentation files (the
@@ -209,5 +209,3 @@ function sha1.hmac_binary(key, text)
 end
 
 setmetatable(sha1, {__call = function(_,msg) return sha1.sha1(msg) end })
-
-return sha1
