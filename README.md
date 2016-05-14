@@ -5,7 +5,7 @@ This library can be used to check or generate the Google Authenticator's one tim
 
 ## functions
 
-### GAuth.Check(secretKey, input)
+### GAuth.Check(string secretKey, string input)
 
 #### Parameters
 
@@ -17,7 +17,7 @@ This library can be used to check or generate the Google Authenticator's one tim
 
 **Bool isValid** - True if the code is valid, false if it not
 
-### GAuth.GenCode(secretKey, time)
+### GAuth.GenCode(string secretKey, int time)
 
 #### Parameters
 
