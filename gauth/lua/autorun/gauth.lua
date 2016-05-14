@@ -25,12 +25,15 @@ function GAuth.Check(skey, value)
 	if GAuth.GenCode(skey, base) == value then return true end
 	if GAuth.GenCode(skey, base - 1) == value then return true end
 	if GAuth.GenCode(skey, base + 1) == value then return true end
+	if GAuth.GenCode(skey, base + 2) == value then return true end
+	if GAuth.GenCode(skey, base - 2) == value then return true end
 	return false
 end
 
+concommand.Remove("gauth")
 concommand.Add("gauth", function(ply, cmd, args)
 	local code = args[1]
-	local secret = "TESTtestTESTtest"
+	local secret = "AAAAAAAAAAAAAAAA"
 	if (GAuth.Check(secret, code)) then
 		print("Authenticated")
 	else
