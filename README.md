@@ -6,7 +6,7 @@ This library can be used to check or generate the Google Authenticator's dynamic
 ```lua
 local input = "172832" -- What the user gives you. The code from the Google Authenticator app
 local secretKey = "TESTtestTESTtest" -- The secret which is given to the user to input into the Google Authenticator app
-if gauth.Check(secretKey, input) then
+if GAuth.Check(secretKey, input) then
   print "Pass"
 else
   print "Bad code"
