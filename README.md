@@ -1,3 +1,6 @@
+CHANGED FOR PERSONAL USE.
+
+
 Garry's Mod Lua Google Authenticator
 =========
 
